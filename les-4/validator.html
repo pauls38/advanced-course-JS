@@ -14,7 +14,7 @@
         input:focus{
             outline: none;
         }
-        button {
+        button{
             border: none;
             background: #70109c;
             color: white;
@@ -23,14 +23,14 @@
             font-weight: bold;
             border-radius: 5px;
         }
-        .error-msg {
+        .error-msg{
             color: red;
             margin: 10px 0;
         }
-        .invalid {
+        .invalid{
             border: 2px solid red;
         }
-        .valid {
+        .valid{
             border: 2px solid green;
         }
     </style>
@@ -52,14 +52,14 @@
         <div>
             <label>
             Your email <br>
-            <input type="email" id="email">
+            <input type="email" name="email" id="email">
             </label>
         </div>
         <button id="val-btn">Submit</button>
     </form>
     <script src="Validator.js"></script>
     <script>
-        window.onload = () {
+        window.onload = () => {
             document.getElementById('myform').addEventListener('submit', e => {
                 let valid = new Validator('myform');
                 if(!valid.valid){
